@@ -1,0 +1,29 @@
+{
+  "name": "jwt-authentication",
+  "version": "1.0.0",
+  "description": "JWT Authentication Refresh and Access Token",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "devAuth": "nodemon authServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumit1523/JWT-Authentication-Refresh-and-Access-Token.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumit1523/JWT-Authentication-Refresh-and-Access-Token/issues"
+  },
+  "homepage": "https://github.com/sumit1523/JWT-Authentication-Refresh-and-Access-Token#readme",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
