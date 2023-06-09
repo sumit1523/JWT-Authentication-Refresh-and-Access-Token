@@ -6,6 +6,7 @@ const jwt = require("jsonwebtoken");
 app.use(express.json());
 
 let refreshTokens = []; // can be store in DB
+const PORT = 4000;
 
 app.post("/token", (req, res) => {
   const refreshToken = req.body.token;
@@ -41,4 +42,5 @@ app.post("/login", (req, res) => {
 const generateAccessToken = (user) => {
   return jwt.sign(user, process.env.ACCESS_TOKEN_SECRET, { expiresIn: "15s" });
 };
-app.listen(4000);
+
+app.listen(PORT);
